@@ -1,0 +1,27 @@
+---
+title: "Sign Your Loan Agreement Through Docusign"
+sidebarTitle: "Loan Agreement"
+description: "Sign your loan agreement in-app; the step is marked complete only after Docusign confirms completion server-side."
+---
+
+Your loan agreement locks in the approved amount, term, and monthly rate. You sign it inside the Masterpiece Labs app, in an embedded Docusign session.
+
+## Signing the agreement
+
+The app opens a Docusign Focused View pre-filled with your approved terms. Read the agreement, sign, and finish inside the embedded view. You do not need a Docusign account.
+
+## When the step is complete
+
+The browser sees a `signing_complete` event as soon as you finish signing, but Masterpiece Labs marks the step complete only when Docusign confirms completion server-side. That confirmation usually arrives within seconds. You will see a "waiting for secure confirmation" state until it does.
+
+<Info>
+  Docusign Connect is the source of truth for completion. The finalization flow will not advance past this step on browser confirmation alone.
+</Info>
+
+<Warning>
+  If a Docusign envelope is declined or voided, you cannot re-sign the same agreement type. Contact your Masterpiece Labs point of contact if you need a new envelope.
+</Warning>
+
+## After signing
+
+Once the loan agreement is `COMPLETED`, the app shows the fully executed document and unblocks any steps waiting on it. You can proceed with DACA setup in parallel or continue in order.

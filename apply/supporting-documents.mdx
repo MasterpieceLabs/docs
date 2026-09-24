@@ -1,0 +1,25 @@
+---
+title: "Upload Supporting Documents for Underwriting"
+sidebarTitle: "Documents"
+description: "Upload the documents Masterpiece Labs requests to underwrite your application; every file is virus scanned before it counts."
+---
+
+Masterpiece Labs needs a document packet to underwrite your application. The app tells you which documents to upload; typical items include formation documents, recent financials, and the buyer contract or purchase order behind the invoice.
+
+## How uploads work
+
+Files upload directly from your browser to Masterpiece Labs's private storage using short-lived presigned URLs. Masterpiece Labs never proxies your file bytes through its API.
+
+Every upload is scanned for malware before it counts as committed. Until the scan finishes, your packet is not marked complete.
+
+<Warning>
+  Wait for the scan to finish before you close the tab. If you replace a document, the older version is superseded and the packet re-checks completeness.
+</Warning>
+
+## Replacing a document
+
+Upload a new file for the same slot to supersede the prior one. Only the most recent successful upload is used for underwriting.
+
+<Note>
+  The app will prompt you for each required document type. Do not upload arbitrary files; use the labelled slots so underwriting can find them.
+</Note>

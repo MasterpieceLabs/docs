@@ -1,0 +1,26 @@
+---
+title: "Complete Business Verification (KYB)"
+sidebarTitle: "Verification"
+description: "Complete the Masterpiece Labs Didit-powered KYB flow in the browser so we can verify your business identity."
+---
+
+Masterpiece Labs verifies your business through Didit, a KYB provider. You complete the flow in-app; Masterpiece Labs does the rest.
+
+## What happens
+
+1. Click **Start verification** in the app.
+2. The app opens a hosted Didit session at the Masterpiece Labs verification host.
+3. Complete the KYB steps Didit asks for. These typically include ownership information and supporting business documents.
+4. When you finish, Didit sends the decision back to Masterpiece Labs through a signed webhook.
+
+## Where status lives
+
+You can check verification status on the verification screen at any time. The backend, not the browser, is the source of truth. If you leave the tab and come back, the status shown reflects the last update Masterpiece Labs received from Didit.
+
+<Info>
+  Only hosted verification URLs from the Masterpiece Labs verification host are accepted. The app will not open sessions from any other host.
+</Info>
+
+<Note>
+  Business verification runs in parallel with document upload. You can complete either first, but Masterpiece Labs will not issue a decision until both are done.
+</Note>

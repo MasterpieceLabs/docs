@@ -1,0 +1,29 @@
+---
+title: "Add Your Buyer Invoice Details for Financing"
+sidebarTitle: "Invoice Details"
+description: "Enter the buyer, invoice size, and payment terms so Masterpiece Labs can price your advance against a specific unpaid invoice."
+---
+
+Masterpiece Labs prices your advance against one specific invoice. Enter its details before you request an advance.
+
+## Fields you provide
+
+- **Buyer business and contact.** Include the buyer's legal name and a contact at the buyer.
+- **Invoice size.** The full amount your buyer owes on this invoice.
+- **Payment terms.** Net 30, net 60, and similar; use the terms on the invoice itself.
+
+Masterpiece Labs matches your buyer name to a preferred-buyer key after trimming common company suffixes. If the name does not match a supported buyer, it falls to `Other` and is priced at standard rates. See [Eligibility and Buyer Coverage](/reference/eligibility) for the supported buyer list.
+
+## Internal QA and lock-in
+
+You do not need a QA-approved invoice from the frontier lab to apply. Masterpiece Labs runs its own internal QA on every invoice, so pre-QA invoices from labs are eligible for an advance once our review reaches `ACCEPTED`. You will see the QA state on the invoice screen.
+
+<Warning>
+  Once your application is `APPROVED` or `REJECTED`, invoice edits are locked. Before then, you can update the invoice at any time.
+</Warning>
+
+<Note>
+  You cannot reduce invoice size below the 70% ceiling of your current requested advance. Lower the loan request first if you need to reduce the invoice.
+</Note>
+
+Cross-link: see [Pricing](/reference/pricing) for how invoice size, buyer, and requested amount combine into a rate.

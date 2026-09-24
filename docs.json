@@ -1,68 +1,81 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Archer",
+  "name": "Masterpiece Labs",
   "theme": "luma",
   "logo": {
-    "light": "/logo/archer-logo.svg",
-    "dark": "/logo/archer-logo.svg"
+    "light": "/images/image(1).png",
+    "dark": "/images/image(1).png"
   },
-  "favicon": "/favicon.ico",
+  "favicon": {
+    "light": "/images/Masterpiece_fav_icon.png",
+    "dark": "/images/Masterpiece_fav_icon.png"
+  },
   "colors": {
     "primary": "#2c3576",
-    "light": "#ffffff"
+    "light": "#ffffff",
+    "dark": "#2c3576"
   },
   "navbar": {
     "primary": {
       "type": "button",
       "label": "Open dashboard",
-      "href": "https://archermoney.com"
+      "href": "https://masterpiecelabs.xyz"
     }
   },
   "navigation": {
     "tabs": [
       {
-        "tab": "SDK",
+        "tab": "Borrowers",
         "groups": [
           {
-            "group": "Get started",
+            "group": "Get Started",
             "pages": [
               "introduction",
               "quickstart",
-              "installation",
-              "authentication"
+              "how-financing-works"
             ]
           },
           {
-            "group": "Guides",
+            "group": "Apply for Financing",
             "pages": [
-              "guides/react-provider",
-              "guides/embed-widget",
-              "guides/cash-out"
+              "apply/business-profile",
+              "apply/invoice-details",
+              "apply/loan-request",
+              "apply/supporting-documents",
+              "apply/business-verification",
+              "apply/application-status"
             ]
           },
           {
-            "group": "Concepts",
+            "group": "After Approval",
             "pages": [
-              "concepts/architecture",
-              "concepts/token-exchange",
-              "concepts/wallet-authorization",
-              "concepts/cash-out"
+              "after-approval/overview",
+              "after-approval/loan-agreement",
+              "after-approval/daca-setup",
+              "after-approval/notice-of-exclusive-control",
+              "after-approval/proof-of-remittance"
             ]
           },
           {
             "group": "Reference",
             "pages": [
-              "reference/types",
-              "reference/client",
-              "reference/backend",
-              "reference/react",
-              "reference/errors",
-              "reference/embed"
+              "reference/faq"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Stakers",
+        "groups": [
+          {
+            "group": "Stakers",
+            "pages": [
+              "stakers/coming-soon"
             ]
           }
         ]
       }
     ]
   },
-  "description": "Documentation for the Archer stablecoin payments platform and @archermoney/sdk."
+  "description": "Borrower documentation for Masterpiece Labs invoice financing, covering the application, approval, and remittance flow."
 }
